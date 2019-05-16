@@ -62,12 +62,13 @@ private static final Logger logger = LoggerFactory.getLogger(SimplebookserviceAp
 	public CommandLineRunner demo(BookRepository repository) {
 		return (args) -> {
 			// save a couple of customers
+			/*
 			repository.save(new Book("Blink", new Double(6)));
 			repository.save(new Book("Mice and Men", new Double(20)));
 			repository.save(new Book("Handmaid's Tales", new Double(15)));
 			repository.save(new Book("The Painting", new Double(10)));
 			repository.save(new Book("Matilda", new Double(11)));
-
+			 */
 			// fetch all books
 			logger.info("Book found with findAll():");
 			logger.info("-------------------------------");
