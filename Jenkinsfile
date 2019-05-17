@@ -5,7 +5,7 @@ node {
     stages {
     	stage ('Build/Push') {
         	steps {
-				sh "sudo docker run hello-world"
+				sh "echo 'hello' "
         	}
         }
     }
