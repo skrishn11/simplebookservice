@@ -27,6 +27,8 @@ private static final Logger logger = LoggerFactory.getLogger(SimplebookserviceAp
 	@Override
     public void run(String... args) throws Exception {
         logger.info("\n----Begin logging BooksServiceApplication----");
+        
+        logger.info("\n----Testing github webhook----");
 
         logger.info("----System Properties from VM Arguments----");
         logger.info("server.port: " + System.getProperty("server.port"));
