@@ -7,9 +7,9 @@ pipeline {
         	steps {
             	checkout scm
             	
-            	sh "sudo docker run hello-world"
+            	sh "sudo docker login -u 'shkrishnamoorthy" -p 'Un1que234$' "
             	
-            	sh "echo pack build-push complete"
+        
         	}
         }
     }
