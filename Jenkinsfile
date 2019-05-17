@@ -1,3 +1,12 @@
 node {
-   echo ' Testing webhook tests '
+
+    checkout scm
+    
+    stages {
+    	stage ('Build/Push') {
+        	steps {
+				sh "sudo docker run hello-world"
+        	}
+        }
+    }
 }
