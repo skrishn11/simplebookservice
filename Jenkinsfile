@@ -7,7 +7,7 @@ node {
     stage "build"
         
         sh "echo starting"
-        sh "docker login -u "shkrishnamoorthy" -p "Un1que234$" '  	
+        sh 'docker login -u "shkrishnamoorthy" -p "Un1que234\$" '  	
         sh "pack build shkrishnamoorthy/pksimages:simplebookservice"
     
 }
