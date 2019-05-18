@@ -6,8 +6,6 @@ node {
     
     stage "build"
             	
-        sh "pack set-default-builder cloudfoundry/cnb:bionic"
-            	
-        sh "pack build shkrishnamoorthy/pksimages:simplebookservice --publish"
+        sh "pack build shkrishnamoorthy/pksimages:simplebookservice"
     
 }
