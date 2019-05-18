@@ -12,7 +12,7 @@ pipeline {
         	steps {
             	checkout scm
             	
-            	//sh "sudo docker login -u 'shkrishnamoorthy' -p 'Un1que234\$' " 
+            	sh "sudo docker login -u 'shkrishnamoorthy' -p 'Un1que234\$' " 
             	
             	sh "pack set-default-builder cloudfoundry/cnb:bionic"
             	
