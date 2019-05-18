@@ -6,7 +6,7 @@ node {
     
     stage "build"
         
-        sh "echo starting"	
+        sh "echo starting build"	
         sh "pack build shkrishnamoorthy/pksimages:simplebookservice"
     
 }
