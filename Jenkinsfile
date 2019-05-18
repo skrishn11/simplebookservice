@@ -5,7 +5,6 @@ node {
     	checkout scm
     
     stage "build"
-    	sh "sudo docker login -u 'shkrishnamoorthy' -p 'Un1que234\$' " 
             	
         sh "pack set-default-builder cloudfoundry/cnb:bionic"
             	
