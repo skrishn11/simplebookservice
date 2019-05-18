@@ -12,17 +12,12 @@ pipeline {
         	steps {
             	checkout scm
             	
-            	/*sh "sudo docker login -u 'shkrishnamoorthy' -p 'Un1que234\$' " */
+            	sh "sudo docker login -u 'shkrishnamoorthy' -p 'Un1que234\$' " 
+            	
+            	sh "pack build shkrishnamoorthy/pksimages:simplebookservice --publish"
             	
         	}
-        
-        stage('Push image') {
-        
-			withCredentials([usernamePassword( credentialsId: 'DockerHub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-
-				sh "sudo docker login -u ${USERNAME} -p ${PASSWORD}"
-			}
-    	}
+        }
     }
     
 }
